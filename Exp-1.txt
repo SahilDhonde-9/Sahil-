@@ -1,0 +1,10 @@
+cloud computing using cloud shell
+
+nano hello.py
+name = input("Enter your name: ")
+print("Welcome to CloudShell,",name, "!")
+
+ctrl+o
+enter
+ctrl+x
+python hello.py
