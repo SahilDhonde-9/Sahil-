@@ -1,0 +1,30 @@
+Basic Shell Scrip in Linux
+
+Git bash Example-1
+nano hello.sh
+#!/bin/bash
+echo "Hello, Welcome to Shell Scripting!"
+
+chmod +x hello.sh
+ ./hello.sh
+
+
+Example-2
+nano calculator.sh
+echo "Enter two Numbers:"
+read a
+read b
+echo "Sum + $(($a + $b))"
+chmod +x calculator.sh
+./calculator.sh
+
+
+Example-3
+nano backup.sh
+#!/bin/bash
+cp myfile.txt myfile_backup.txt
+echo "Backup Created!"
+ chmod +x backup.sh
+./backup.sh
+
+
