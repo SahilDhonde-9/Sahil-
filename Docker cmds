@@ -1,0 +1,16 @@
+docker version
+docker info
+docker pull python:3.9.18-slim-bullseye
+docker images
+docker images -q
+docker images -a
+docker image ls
+docker run -d --name mypython python:3.9.18-slim-bullseye tail -f /dev/null
+docker ps
+
+docker ps -a
+
+docker ps -a
+
+
+
