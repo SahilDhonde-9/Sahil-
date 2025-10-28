@@ -1,5 +1,0 @@
-docker info
-docker images
-docker images ls
-docker ps
-docker pull python:3.9.18-slim-bullseye
