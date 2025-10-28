@@ -1,0 +1,9 @@
+git clone https://github.com/SahilDhonde-9/RemoteGitDemo.git
+cd RemoteGitDemo
+echo "This is sahil's remote demo" > remote.txt
+ git add .
+git commit -m "Added remote demo file by Sahil"
+ git push origin main
+git pull origin main
+ls
+cat remote.txt
