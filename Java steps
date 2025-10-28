@@ -1,0 +1,44 @@
+Java Jenkins
+
+
+reate a Java file named sample.java
+
+:
+
+following code:
+
+Java
+
+Copy code
+
+public class sample {
+
+public static void main(String[] args) {
+
+}
+
+System.out.println("Hello Java in Jenkins!!"); }
+
+2. Open Jenkins in your browser using
+
+http://localhost:8080/
+
+3. Click on New Item, select Freestyle Project, and give the name JavaJob.
+
+4. Go to the Build section and click on Add build step → Execute Windows batch command.
+
+5. In the command box, type:
+
+Copy code
+
+javac sample.java
+
+java sample
+
+6. Click Save, then click Build Now.
+
+7. Finally, check the Console Output - you should see the message:
+
+
+
+Hello Java in Jenkins!!
