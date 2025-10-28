@@ -1,0 +1,12 @@
+Docker-Basics-Pulling and running containers
+
+docker --version  docker version 28.3.3
+docker pull ubuntu
+docker run -it ubuntu
+ls
+pwd
+echo "Hello from inside the container"
+exit
+docker images
+docker run -d -[ 8080:80 nginx
+docker ps
