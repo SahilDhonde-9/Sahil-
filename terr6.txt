@@ -1,0 +1,30 @@
+ terraform
+
+terraform -v
+v1
+
+aws configure
+Access Key: AKIAXESQXH32LSTAZZGC
+Secrete Key: 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
+[us-east-1]
+json
+
+mkdir terraform-aws-demo
+cd terraform-aws-demo
+main.tf
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "demo_server" {
+  ami           = "ami-0c55b159cbfafe1f0"  # Ubuntu AMI (update for region)
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "Terraform-Demo"
+  }
+}
+
+terraform init
+terraform plan
+terraform apply -auto-approve
