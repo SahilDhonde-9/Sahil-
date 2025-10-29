@@ -1,0 +1,14 @@
+Monitoring Htop
+
+sudo apt update
+sudo apt install htop
+Htop
+
+
+Netstat
+
+sudo apt install net-tools
+netstat -tuln
+netstat -tulpn
+netstat -ant
+netstat -r
