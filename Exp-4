@@ -8,5 +8,5 @@ pwd
 echo "Hello from inside the container"
 exit
 docker images
-docker run -d -[ 8080:80 nginx
+docker run -d -p 8080:80 nginx
 docker ps
