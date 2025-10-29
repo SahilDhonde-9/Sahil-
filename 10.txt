@@ -1,0 +1,55 @@
+Bucket > Create Bucket > index.html code tak > file upload kr > Permission > Bucket Policy (edit) =code > CORS(edit) code > Block Public in permission > Properties Scroll Down > Static Website Hosting(Enable) > index.html link vr click kr
+
+
+index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Print 100</title>
+</head>
+<body>
+  <h1>Short HTML Demo</h1>
+  <button id="printBtn">Print 100 times</button>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click', () => {
+      for (let i = 1; i <= 100; i++) {
+        console.log(i + ". Hello, Welcome to Shell Scripting!");
+      }
+      alert("Printed 100 messages to the console. Open DevTools (F12) → Console to see them.");
+    });
+  </script>
+</body>
+</html>
+
+
+Bucket policy 
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::sahil-bucket-10/*"
+        }
+    ]
+}
+
+CORS
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
